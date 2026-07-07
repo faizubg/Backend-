@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Front End Web Development",
+    "description": "This course will provide you with all of the essentials to become a successful frontend web developer. You will learn to use HTML5, CSS and JS.",
+    "Weeks": "8",
+    "Tuition": 8000,
+    "MinimumSkill": "beginner",
+    "ScholarshipAvailable": true,
+    "bootcamp": "69e4df290ed668905bf0ffed"
+  },
+  {
+    "title": "Full Stack Web Development",
+    "description": "In this course you will learn full stack web development, first learning the backend with Node.js and Express then the frontend with React.",
+    "Weeks": "12",
+    "Tuition": 10000,
+    "MinimumSkill": "intermediate",
+    "ScholarshipAvailable": false,
+    "bootcamp": "69e4df290ed668905bf0ffed"
+  },
+  {
+    "title": "UI/UX Design",
+    "description": "This course will teach you the fundamentals of UI/UX design, working with tools like Figma to create beautiful and functional user interfaces.",
+    "Weeks": "6",
+    "Tuition": 7500,
+    "MinimumSkill": "beginner",
+    "ScholarshipAvailable": true,
+    "bootcamp": "69e4df290ed668905bf0ffee"
+  },
+  {
+    "title": "Backend Development with Node.js",
+    "description": "Learn to build robust backend systems using Node.js, Express and MongoDB, including authentication and RESTful API design.",
+    "Weeks": "10",
+    "Tuition": 9500,
+    "MinimumSkill": "intermediate",
+    "ScholarshipAvailable": false,
+    "bootcamp": "69e4df290ed668905bf0ffee"
+  },
+  {
+    "title": "Data Science Fundamentals",
+    "description": "An introduction to data science covering Python, data analysis, visualization, and basic machine learning concepts.",
+    "Weeks": "10",
+    "Tuition": 11000,
+    "MinimumSkill": "beginner",
+    "ScholarshipAvailable": true,
+    "bootcamp": "69e4df290ed668905bf0ffef"
+  },
+  {
+    "title": "Advanced JavaScript Concepts",
+    "description": "Deep dive into advanced JavaScript topics including closures, prototypes, async programming, and design patterns.",
+    "Weeks": "6",
+    "Tuition": 6500,
+    "MinimumSkill": "advanced",
+    "ScholarshipAvailable": false,
+    "bootcamp": "69e4df290ed668905bf0fff0"
+  },
+  {
+    "title": "Business for Developers",
+    "description": "Learn the business side of software development, including freelancing, client management, and building your own tech startup.",
+    "Weeks": "4",
+    "Tuition": 5000,
+    "MinimumSkill": "beginner",
+    "ScholarshipAvailable": true,
+    "bootcamp": "69e4df290ed668905bf0fff0"
+  }
+]

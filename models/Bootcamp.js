@@ -86,16 +86,17 @@ const BootcampSchema = new mongoose.Schema({
         default: Date.now
     }
 });
-
 // Create bootcamp slug from the name
-BootcampSchema.pre('save', function(next) {
+BootcampSchema.pre('save', function() {
     this.slug = slugify(this.name, { lower: true });
-    next();
-}); // <-- this was missing, closing the slug hook
+});
 
 // Geocode & create location field
-BootcampSchema.pre('save', async function(next) {
+BootcampSchema.pre('save', async function() {
     const loc = await geocoder.geocode(this.address);
+    if (!loc || loc.length === 0) {
+        throw new Error(`Geocoding failed for address: ${this.address}`);
+    }
     this.location = {
         type: 'Point',
         coordinates: [loc[0].longitude, loc[0].latitude],
@@ -106,9 +107,10 @@ BootcampSchema.pre('save', async function(next) {
         zipcode: loc[0].zipcode,
         country: loc[0].countryCode
     };
+    this.address = undefined;
+});
+// Create bootcamp slug from the name
     // Do not save address in DB
     this.address = undefined;
-    next();
-});
 
 module.exports = mongoose.model('Bootcamp', BootcampSchema);
